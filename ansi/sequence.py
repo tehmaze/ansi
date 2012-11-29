@@ -13,7 +13,7 @@ def sequence(letter, fields=1, default=[]):
 
         return ''.join([
             CSI,
-            ';'.join(output),
+            ';'.join(map(str, output)),
             letter,
         ])
 
