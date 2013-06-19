@@ -62,4 +62,4 @@ def rgb256(r, g, b):
         colour = sum([16] + [int (6 * float(val) / 256) * mod
             for val, mod in ((r, 36), (g, 6), (b, 1))])
 
-    return sequence('m')(38, 5, colour)
+    return sequence('m', fields=3)(38, 5, colour)
