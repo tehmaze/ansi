@@ -31,6 +31,11 @@ Also, 256 RGB colors are supported::
 
     >>> from ansi.colour import rgb, reset
     >>> print rgb(0xff, 0x80, 0x00) + 'hello world' + reset
+    ...
+
+If you prefer to use American English in stead::
+
+    >>> from ansi.color import ...
 ''',
       author='Wijnand Modderman-Lenstra',
       author_email='maze@pyth0n.org',
