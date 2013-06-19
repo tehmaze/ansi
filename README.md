@@ -19,3 +19,7 @@ If you like syntactic sugar, you may also do:
     >>> print bg.red(fg.yellow('Hello world!'))
     ...
 
+Also, 256 RGB colors are supported:
+
+    >>> from ansi.colour import rgb, reset
+    >>> print rgb(0xff, 0x80, 0x00) + 'hello world' + reset
