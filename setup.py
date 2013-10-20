@@ -3,8 +3,12 @@
 from distutils.core import setup
 
 setup(name='ansi',
-      version='0.1.1',
+      version='0.1.2',
       description='ANSI cursor movement and graphics',
+      author='Wijnand Modderman-Lenstra',
+      author_email='maze@pyth0n.org',
+      url='https://github.com/tehmaze/ansi/',
+      packages = ['ansi', 'ansi.colour'],
       long_description='''
 ANSI
 ====
@@ -36,9 +40,4 @@ Also, 256 RGB colors are supported::
 If you prefer to use American English in stead::
 
     >>> from ansi.color import ...
-''',
-      author='Wijnand Modderman-Lenstra',
-      author_email='maze@pyth0n.org',
-      url='https://github.com/tehmaze/ansi/',
-      packages = ['ansi'],
-)
+''')
