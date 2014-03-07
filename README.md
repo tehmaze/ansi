@@ -34,5 +34,8 @@ If you prefer to use American English in stead:
 
     >>> from ansi.color import ...
     
-References
 
+References
+==========
+
+http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-048.pdf
