@@ -30,6 +30,6 @@ Also, 256 RGB colours are supported:
     >>> print ''.join(map(str, msg))
     ...
 
-If you prefer to use American English in stead:
+If you prefer to use American English instead:
 
     >>> from ansi.color import ...
