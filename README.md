@@ -33,3 +33,6 @@ Also, 256 RGB colours are supported:
 If you prefer to use American English in stead:
 
     >>> from ansi.color import ...
+    
+References
+
