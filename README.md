@@ -33,3 +33,9 @@ Also, 256 RGB colours are supported:
 If you prefer to use American English instead:
 
     >>> from ansi.color import ...
+    
+
+References
+----------
+
+http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-048.pdf
