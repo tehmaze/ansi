@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='ansi',
-      version='0.1.4',
+      version='0.1.5',
       description='ANSI cursor movement and graphics',
       author='Wijnand Modderman-Lenstra',
       author_email='maze@pyth0n.org',
