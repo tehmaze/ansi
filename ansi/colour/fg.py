@@ -25,19 +25,22 @@ boldmagenta     = bold + magenta
 boldcyan        = bold + cyan
 boldwhite       = bold + white
 
+# High intensity variants
+brightblack     = Graphic('90')
+brightred       = Graphic('91')
+brightgreen     = Graphic('92')
+brightyellow    = Graphic('93')
+brightblue      = Graphic('94')
+brightmagenta   = Graphic('95')
+brightcyan      = Graphic('96')
+brightwhite     = Graphic('97')
+
 # Convenience wrappers
 brown           = yellow                # Not in ANSI/ECMA-048 standard
 grey            = white                 # Not in ANSI/ECMA-048 standard
 gray            = white                 # US English
 darkgrey        = boldblack
 darkgray        = boldblack             # US English
-brightred       = boldred
-brightgreen     = boldgreen
-brightyellow    = boldyellow
 brightbrown     = boldyellow            # Not in ANSI/ECMA-048 standard
-brightblue      = boldblue
-brightmagenta   = boldmagenta
-brightcyan      = boldcyan
-brightwhite     = boldwhite
 brightgrey      = boldwhite             # Not in ANSI/ECMA-048 standard
 brightgray      = boldwhite             # Us English
