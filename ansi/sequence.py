@@ -1,4 +1,6 @@
 CSI = '\x1b['
+OSC = '\x1b]'
+BEL = '\a'
 
 
 def sequence(letter, fields=1, default=[]):
@@ -18,3 +20,15 @@ def sequence(letter, fields=1, default=[]):
         ])
 
     return _sequence
+
+def osc(number):
+    def _osc(*args, **kwargs):
+        kwargs = ["%s=%s" % (k,v) for (k,v) in kwargs.items()]
+        return ''.join([
+            OSC,
+            str(number),
+            ';',
+            ';'.join(list(args)+kwargs),
+            BEL,
+        ])
+    return _osc
