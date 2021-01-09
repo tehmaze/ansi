@@ -44,3 +44,7 @@ darkgray        = boldblack             # US English
 brightbrown     = boldyellow            # Not in ANSI/ECMA-048 standard
 brightgrey      = boldwhite             # Not in ANSI/ECMA-048 standard
 brightgray      = boldwhite             # Us English
+
+# 8 bit and 24 bit colors colors
+palette         = lambda colour: Graphic('38;5;%s' % colour)
+truecolor       = lambda r,g,b: Graphic('38;2;%s;%s;%s' % (r,g,b))
