@@ -41,3 +41,8 @@ References
 ----------
 
 http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-048.pdf
+
+
+Requirements
+------------
+Ansi requires python 3.6 and supports typing.
