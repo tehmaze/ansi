@@ -9,6 +9,7 @@ setup(name='ansi',
       author_email='maze@pyth0n.org',
       url='https://github.com/tehmaze/ansi/',
       packages = ['ansi', 'ansi.colour'],
+      package_data = {'ansi': ['py.typed']},
       long_description='''
 ANSI
 ====
