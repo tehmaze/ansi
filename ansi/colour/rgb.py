@@ -17,17 +17,19 @@ ANSI_COLOURS = (
 
 
 def rgb_distance(rgb1: RGB, rgb2: RGB) -> int:
-    '''
+    """
     Calculate the distance between two RGB sequences.
-    '''
+    """
     return sum(map(lambda c: (c[0] - c[1]) ** 2,
                    zip(rgb1, rgb2)))
 
 
 def rgb_reduce(r: int, g: int, b: int, mode: int = 8) -> str:
-    '''
+    """
     Convert an RGB colour to 8 or 16 colour ANSI graphics.
-    '''
+
+    Finds the closest color within the 8 or 16 color palette to a given RGB value.
+    """
     assert mode in (8, 16), 'Mode has to be 8 or 16, got %r instead.' % mode
     colours = ANSI_COLOURS[:mode]
     matches = [(rgb_distance(c, (r, g, b)), i)
@@ -37,23 +39,29 @@ def rgb_reduce(r: int, g: int, b: int, mode: int = 8) -> str:
 
 
 def rgb8(r: int, g: int, b: int) -> str:
-    '''
+    """
     Convert an RGB colour to 8 colour ANSI graphics.
-    '''
+
+    Finds the closest color within the 8 color palette to a given RGB value.
+    """
     return rgb_reduce(r, g, b, 8)
 
 
 def rgb16(r: int, g: int, b: int) -> str:
-    '''
+    """
     Convert an RGB colour to 16 colour ANSI graphics.
-    '''
+
+    Finds the closest color within the 16 color palette to a given RGB value.
+    """
     return rgb_reduce(r, g, b, 16)
 
 
 def rgb256(r: int, g: int, b: int) -> str:
-    '''
+    """
     Convert an RGB colour to 256 colour ANSI graphics.
-    '''
+
+    Finds the closest color within the 256 color palette to a given RGB value.
+    """
     grey = False
     poss = True
     step = 2.5
