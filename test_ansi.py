@@ -1,5 +1,21 @@
+# noinspection PyUnresolvedReferences
 def test_import() -> None:
-    pass
+    """Test that importing works for all levels."""
+    import ansi
+    import ansi.colour
+    from ansi.colour import bg, fg, fx, rgb
+    from ansi.colour.fx import reset
+    from ansi.colour.rgb import rgb256
+
+
+# noinspection PyUnresolvedReferences
+def test_import_color() -> None:
+    """Test that importing works for the color spelling too."""
+    import ansi
+    import ansi.color
+    from ansi.color import bg, fg, fx, rgb
+    from ansi.color.fx import reset
+    from ansi.color.rgb import rgb256
 
 
 def test_fg_bg() -> None:

@@ -18,7 +18,7 @@ class Graphic(object):
     def __add__(self, their: Union[str, "Graphic"]) -> Union[str, "Graphic"]:
         if isinstance(their, str):
             return ''.join([str(self), their])
-        elif isinstance(their, bytes):
+        elif isinstance(their, bytes):  # type: ignore  # This is already checked by the type annotation
             raise TypeError('You can only add strings or strings decorated with escape sequences, not bytes.')
         else:
             return Graphic(*(self.values + their.values))

@@ -8,3 +8,4 @@ rendering coloured text.
 -----
 - Added typing information
 - Deprecated support for python 2. ANSI requires now at least python 3.6.
+- Change color/colour spelling dual imports such that IDEs do not flag missing imports.
