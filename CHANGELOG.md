@@ -6,6 +6,15 @@ rendering coloured text.
 
 0.3.0
 -----
-- Added typing information
-- Deprecated support for python 2. ANSI requires now at least python 3.6.
-- Change color/colour spelling dual imports such that IDEs do not flag missing imports.
+- [PR #18](https://github.com/tehmaze/ansi/pull/14) Deprecate Python 2 and
+  versions earlier than 3.7 by adding type information. `rgb()` function no
+  longer accepts strings of integers, only integers.
+- [PR #14](https://github.com/tehmaze/ansi/pull/14) Add support for 8 and 24-bit
+  True Color.
+
+0.2.0
+-----
+
+- [PR #13](https://github.com/tehmaze/ansi/pull/13) Support for OSC and some
+  proprietary iTerm sequences
+- [PR #12](https://github.com/tehmaze/ansi/pull/13) show/hide cursor sequence
