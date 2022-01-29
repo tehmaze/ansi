@@ -1,1 +1,1 @@
-__all__ = ['bg', 'fg', 'fx']
+__all__ = ['bg', 'fg', 'fx', 'rgb']
