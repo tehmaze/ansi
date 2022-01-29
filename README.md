@@ -1,8 +1,6 @@
 ANSI
 ====
 
-[![Build Status](https://travis-ci.org/tehmaze/ansi.svg?branch=master)](https://travis-ci.org/tehmaze/ansi) ![PyPI](https://img.shields.io/pypi/v/ansi)
-
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
