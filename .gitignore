@@ -8,3 +8,5 @@ dist
 .tox
 *.egg-info
 .DS_Store
+.idea
+.dmypy.json
