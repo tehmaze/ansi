@@ -47,3 +47,8 @@ def test_iterm() -> None:
     from ansi import iterm
     assert iterm.attention(True) == '\x1b]1337;RequestAttention=yes\x07'
     assert iterm.attention('yes') == '\x1b]1337;RequestAttention=yes\x07'
+
+
+def test_add() -> None:
+    from ansi.colour import fg
+    assert (fg.blue + fg.bold)('x') == '\x1b[34;1mx\x1b[0m'

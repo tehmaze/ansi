@@ -1,5 +1,7 @@
 from typing import Any, List, Optional, TYPE_CHECKING, Union
 
+from typing_extensions import Protocol
+
 if TYPE_CHECKING:
     from ansi.colour.base import Graphic
 
@@ -8,7 +10,7 @@ OSC = '\x1b]'
 BEL = '\a'
 
 
-class SequenceGenerator():
+class SequenceGenerator(Protocol):
     def __call__(self, *vals: Union[int, str, "Graphic"]) -> str: ...
 
 
@@ -34,7 +36,7 @@ def sequence(letter: str, fields: int = 1,
     return _sequence
 
 
-class OSCGenerator():
+class OSCGenerator(Protocol):
     def __call__(*args: str, **kwargs: Any) -> str: ...
 
 
