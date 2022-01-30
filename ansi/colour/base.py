@@ -23,7 +23,7 @@ class Graphic(object):
             return cast(T, self.sequence + their)
         elif isinstance(their, Graphic):
             return Graphic(*(self.values + their.values))
-        raise AssertionError('Only str and Graphic objects can be added together.')
+        raise TypeError('You can only add strings or strings decorated with escape sequences together.')
 
     def __call__(self, text: str, reset: bool = True) -> str:
         result = self.sequence + text
