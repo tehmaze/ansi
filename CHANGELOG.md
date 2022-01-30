@@ -4,6 +4,11 @@ ANSI Changelog
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
+0.3.3
+-----
+- [PR #21](https://github.com/tehmaze/ansi/pull/21) use 3rd party
+  `typing_extensions` module for better version compatibility
+
 0.3.1
 -----
 - [PR #18](https://github.com/tehmaze/ansi/pull/14) Deprecate Python 2 and
