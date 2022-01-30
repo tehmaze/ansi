@@ -1,6 +1,11 @@
+import sys
+
 from typing import Any, List, Optional, TYPE_CHECKING, Union
 
-from typing_extensions import Protocol
+if sys.version_info >= (3, 8):
+    from typing import Protocol
+else:
+    from typing_extensions import Protocol
 
 if TYPE_CHECKING:
     from ansi.colour.base import Graphic
