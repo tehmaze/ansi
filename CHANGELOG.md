@@ -4,15 +4,16 @@ ANSI Changelog
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
-0.3.4
+0.3.5
 -----
 - [PR #21](https://github.com/tehmaze/ansi/pull/21) use 3rd party
   `typing_extensions` module for better version compatibility
 
-0.3.3
+0.3.4
 -----
 
-- Two minor versions were briefly released to resolve packaging/README issues
+- Three minor versions were briefly released to resolve packaging/README issues
+  with 0.3.1.
 
 0.3.1
 -----
