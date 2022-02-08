@@ -4,6 +4,11 @@ ANSI Changelog
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
+0.3.6
+-----
+- [PR #24](https://github.com/tehmaze/ansi/pull/24) Include py.typed marker
+  to enable type checking of the installed package.
+
 0.3.5
 -----
 - [PR #21](https://github.com/tehmaze/ansi/pull/21) use 3rd party
