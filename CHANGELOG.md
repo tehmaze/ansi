@@ -4,6 +4,10 @@ ANSI Changelog
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
+0.3.7
+-----
+- [PR #24](https://github.com/tehmaze/ansi/pull/25) Enable empty sequences that evaluate to the empty string.
+
 0.3.6
 -----
 - [PR #24](https://github.com/tehmaze/ansi/pull/24) Include py.typed marker

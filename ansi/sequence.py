@@ -24,6 +24,8 @@ def sequence(letter: str, fields: int = 1,
     """Create a function that creates escape sequences."""
 
     def _sequence(*values: Union[int, str, "Graphic"]) -> str:
+        if len(values) == 0:
+            return ''
         output = list(values)
         if fields >= 0 and len(output) > fields:
             raise ValueError('Invalid number of fields, got %d expected %d' %

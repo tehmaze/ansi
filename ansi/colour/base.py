@@ -15,7 +15,6 @@ class Graphic(object):
 
     def __init__(self, *values: Union[str, "Graphic"]) -> None:
         self.values = values
-        self.sequence = sequence('m', fields=-1)(*values)
 
     def __add__(self, their: T) -> T:
         if isinstance(their, str):
@@ -27,9 +26,14 @@ class Graphic(object):
 
     def __call__(self, text: str, reset: bool = True) -> str:
         result = self.sequence + text
-        if reset:
+        if reset and len(self.values)>0:
             result += str(Graphic('0'))
         return result
+
+    @property
+    def sequence(self) -> str:
+        """Returns the formatted escape sequence with all values passed to this object."""
+        return sequence('m', fields=-1)(*self.values)
 
     def __str__(self) -> str:
         return self.sequence

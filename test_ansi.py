@@ -52,3 +52,10 @@ def test_iterm() -> None:
 def test_add() -> None:
     from ansi.colour import fg
     assert (fg.blue + fg.bold)('x') == '\x1b[34;1mx\x1b[0m'
+
+def test_empty() -> None:
+    from ansi.colour import fg, fx
+    assert fg.none('12') == '12'
+    assert fg.none + '12' == '12'
+
+    assert fx.noop + '12' == '12'
