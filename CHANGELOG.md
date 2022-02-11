@@ -4,6 +4,10 @@ ANSI Changelog
 Various ANSI escape codes, used in moving the cursor in a text console or
 rendering coloured text.
 
+0.3.7
+-----
+- [PR #26](https://github.com/tehmaze/ansi/pull/26) Enable concatenating a string and a sequence, not just a sequence and a string.
+
 0.3.6
 -----
 - [PR #24](https://github.com/tehmaze/ansi/pull/24) Include py.typed marker

@@ -1,4 +1,7 @@
 # noinspection PyUnresolvedReferences
+import pytest
+
+
 def test_import() -> None:
     """Test that importing works for all levels."""
     import ansi
@@ -52,3 +55,16 @@ def test_iterm() -> None:
 def test_add() -> None:
     from ansi.colour import fg
     assert (fg.blue + fg.bold)('x') == '\x1b[34;1mx\x1b[0m'
+
+def test_add_to_string() -> None:
+    from ansi.colour import fg, fx
+    assert fg.blue + 'x' == '\x1b[34mx'
+    assert fg.blue + 'x' + fx.reset == '\x1b[34mx\x1b[0m'
+
+def test_add_other() -> None:
+    from ansi.colour import fg, fx
+    with pytest.raises(TypeError):
+        fg.blue + 1
+
+    with pytest.raises(TypeError):
+        1 + fg.blue
