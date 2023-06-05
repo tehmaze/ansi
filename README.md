@@ -38,7 +38,7 @@ If you prefer to use American English instead:
 References
 ----------
 
-http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-048.pdf
+https://www.ecma-international.org/publications-and-standards/standards/ecma-48/
 
 
 Requirements
