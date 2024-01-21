@@ -3,6 +3,10 @@
 from ansi.colour.base import Graphic
 from ansi.colour.fx import bold
 
+# The empty sequence, which can be useful e.g. in this situation
+#    colour = fg.red if is_alert else fg.none
+#    print(colour(message))
+none            = Graphic()
 
 # ECMA-048 standard names
 black           = Graphic('30')

@@ -2,6 +2,7 @@
 
 from ansi.colour.base import Graphic
 
+noop             = Graphic()
 
 # ECMA-048 standard names
 reset            = Graphic('0')
