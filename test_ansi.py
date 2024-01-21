@@ -68,3 +68,9 @@ def test_add_other() -> None:
 
     with pytest.raises(TypeError):
         1 + fg.blue
+
+def test_empty() -> None:
+    from ansi.colour import fg, fx
+    assert fg.none('12') == '12'
+    assert fg.none + '12' == '12'
+    assert fx.noop + '12' == '12'
