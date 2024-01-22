@@ -7,7 +7,12 @@ rendering coloured text.
 0.3.7
 -----
 - [PR #26](https://github.com/tehmaze/ansi/pull/26) Enable concatenating a string and a sequence, not just a sequence and a string.
-- [PR #24](https://github.com/tehmaze/ansi/pull/25) Enable empty sequences that evaluate to the empty string.
+- [PR #27](https://github.com/tehmaze/ansi/pull/27) Enable empty sequences that evaluate to the empty string.
+- [PR #29](https://github.com/tehmaze/ansi/pull/29) Allow importing the main module to import all submodules
+- [PR #31](https://github.com/tehmaze/ansi/pull/31) Fix ECMA-48 link in README.md
+- [PR #32](https://github.com/tehmaze/ansi/pull/32) Add license to setup.cfg
+- [PR #33](https://github.com/tehmaze/ansi/pull/33) bugfix sequence in `ansi.cursor.erase('')`
+- [PR #34](https://github.com/tehmaze/ansi/pull/34) Add `bg=True` argument for `ansi.colour.rgb.rgb256()`
 
 0.3.6
 -----
