@@ -56,7 +56,7 @@ def rgb16(r: int, g: int, b: int) -> str:
     return rgb_reduce(r, g, b, 16)
 
 
-def rgb256(r: int, g: int, b: int) -> str:
+def rgb256(r: int, g: int, b: int, bg: bool=False) -> str:
     """
     Convert an RGB colour to 256 colour ANSI graphics.
 
@@ -79,4 +79,4 @@ def rgb256(r: int, g: int, b: int) -> str:
         colour = sum([16] + [int(6 * float(val) / 256) * mod
                              for val, mod in ((r, 36), (g, 6), (b, 1))])
 
-    return sequence('m', fields=3)(38, 5, colour)
+    return sequence('m', fields=3)(38 if not bg else 48, 5, colour)
