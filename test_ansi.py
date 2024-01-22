@@ -74,3 +74,8 @@ def test_empty() -> None:
     assert fg.none('12') == '12'
     assert fg.none + '12' == '12'
     assert fx.noop + '12' == '12'
+
+def test_erase() -> None:
+    from ansi.cursor import erase, erase_data, erase_line
+    assert erase('') == erase_data('') == '\x1b[2J'
+    assert erase_line('') == '\x1b[K'
