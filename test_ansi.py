@@ -40,6 +40,11 @@ def test_rgb() -> None:
     msg = (rgb256(0xff, 0x80, 0x00), 'hello world', reset)
     assert ''.join(map(str, msg)) == '\x1b[38;5;214mhello world\x1b[0m'
 
+def test_rgb_bg() -> None:
+    from ansi.colour.rgb import rgb256
+    from ansi.colour.fx import reset
+    msg = (rgb256(0xff, 0x80, 0x00, bg=True), 'hello world', reset)
+    assert ''.join(map(str, msg)) == '\x1b[48;5;214mhello world\x1b[0m'
 
 def test_osc() -> None:
     from ansi import osc
